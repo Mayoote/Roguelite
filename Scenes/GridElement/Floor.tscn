@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhh5d8w46lo3u"]
+
+[ext_resource type="Texture2D" uid="uid://cbk8hdm3yu5lx" path="res://Assets/floors/floor1.png" id="1_4krjt"]
+[ext_resource type="Script" path="res://Scripts/Roguelite/GridElement/Floor.cs" id="1_ooaen"]
+
+[node name="Floor" type="Node2D" node_paths=PackedStringArray("renderer")]
+script = ExtResource("1_ooaen")
+renderer = NodePath("Renderer")
+
+[node name="Renderer" type="Sprite2D" parent="."]
+texture = ExtResource("1_4krjt")
